@@ -4,6 +4,10 @@
     background-color: lightblue
 }
 
+.navbar{
+    background-color: navy
+}
+
 /* Drop-in i din site.css */
 @media (hover: hover) and (pointer: fine) {
     .navbar .dropdown:hover > .dropdown-menu,
