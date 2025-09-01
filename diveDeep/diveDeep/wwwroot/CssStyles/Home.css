@@ -3,3 +3,15 @@
 .footer{
     background-color: lightblue
 }
+
+/* Drop-in i din site.css */
+@media (hover: hover) and (pointer: fine) {
+    .navbar .dropdown:hover > .dropdown-menu,
+    .navbar .dropdown:focus-within > .dropdown-menu {
+        display: block; /* vis menuen */
+    }
+    /* Fjern evt. lille hop mellem toggle og menu */
+    .navbar .dropdown-menu {
+        margin-top: 0;
+    }
+}
