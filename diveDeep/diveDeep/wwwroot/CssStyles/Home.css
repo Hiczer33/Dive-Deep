@@ -1,13 +1,28 @@
 ﻿body {
 }
 .footer{
-    background-color: lightblue
+    display:grid;
+    background-color: lightblue;
 }
-
+.body {
+    grid-template-rows: auto 1fr auto auto auto;
+}
 .navbar{
-    background-color: navy
+    background-color: lightblue;
 }
+.grid3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 215px;
+    gap: 50px;
+    padding: 30px;
+    text-align: center;
+}
+.grid2{
+    display:grid;
 
+
+}
 /* Drop-in i din site.css */
 @media (hover: hover) and (pointer: fine) {
     .navbar .dropdown:hover > .dropdown-menu,
