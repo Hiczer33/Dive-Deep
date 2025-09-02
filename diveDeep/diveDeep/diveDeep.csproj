@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
     <Folder Include="Persistence\" />
     <Folder Include="wwwroot\lib\bootstrap\" />
     <Folder Include="wwwroot\Images\" />
