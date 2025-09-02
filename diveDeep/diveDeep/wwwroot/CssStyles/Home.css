@@ -13,7 +13,7 @@
 .grid3 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    height: 215px;
+    height: 450px;
     gap: 50px;
     padding: 30px;
     text-align: center;
