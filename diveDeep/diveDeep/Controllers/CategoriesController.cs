@@ -45,5 +45,10 @@ namespace diveDeep.Controllers
         {
             return View();
         }
+
+        public IActionResult Pakke()
+        {
+            return View();
+        }
     }
 }
