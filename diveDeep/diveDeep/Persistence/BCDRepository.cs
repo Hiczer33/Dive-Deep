@@ -13,7 +13,8 @@ namespace diveDeep.Persistence
                 Brand = "Scubapro",
                 Model = "Navigator Lite BCD",
                 Size = new List<SizeType> { SizeType.S, SizeType.M, SizeType.L },
-                PricePrDay = 125
+                PricePrDay = 125,
+                ImageUrl = "\\Images\\BCD_Pictures\\Scubapro_Navigator Lite BCD.webp"
             },
 
             new BCD
@@ -21,14 +22,16 @@ namespace diveDeep.Persistence
                 Brand = "Scubapro",
                 Model = "BCD Glide",
                 Size = new List<SizeType> { SizeType.S, SizeType.M, SizeType.L },
-                PricePrDay = 140
+                PricePrDay = 140,
+                ImageUrl ="\\Images\\BCD_Pictures\\scubapro_bcdglide.webp"
             },
             new BCD
             {
                 Brand = "Scubapro",
                 Model = "BCD Hydros Pro",
                 Size = new List<SizeType> { SizeType.S, SizeType.M, SizeType.L },
-                PricePrDay = 200
+                PricePrDay = 200,
+                ImageUrl ="\\Images\\BCD_Pictures\\Scubapro_BCDHydrosPro.webp"
             },
 
             new BCD
@@ -36,7 +39,8 @@ namespace diveDeep.Persistence
                 Brand = "Seac",
                 Model = "BCD Modular",
                 Size = new List<SizeType> { SizeType.S, SizeType.M, SizeType.L },
-                PricePrDay = 145
+                PricePrDay = 145,
+                ImageUrl ="\\Images\\BCD_Pictures\\SEAC_BCDModular.webp"
             }
         };
 
