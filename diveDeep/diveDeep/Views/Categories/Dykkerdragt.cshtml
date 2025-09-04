@@ -1,2 +1,20 @@
 ﻿
 <h3>Dykkerdragt Her</h3>
+@{
+    <div class="container-fluid px-0 d-flex flex-wrap gap-4 ">
+        @{
+            foreach (var Dykkerdragt in Model)
+            {
+                <div class="card d-flex" style="width:18rem">
+                    <div class="card-body">
+                        <h5 class="card-title">@Dykkerdragt.Title</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">@Dykkerdragt.ReleaseYear | @Dykkerdragt.DurationInMinutes min | @Dykkerdragt.Rating</h6>
+                        <p class="card-text">@Dykkerdragt.Description</p>
+                        <a class="btn btn-primary" asp-controller="movies" asp-action="edit" asp-route-id="@Dykkerdragt.MovieId">Edit</a>
+                        <a class="btn btn-danger" asp-controller="movies" asp-action="delete" asp-route-id="@Dykkerdragt.MovieId" onclick="return confirmDelete('@movie.Title')">Delete</a>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+}
