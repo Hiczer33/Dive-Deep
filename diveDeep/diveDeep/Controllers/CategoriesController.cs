@@ -43,7 +43,7 @@ namespace diveDeep.Controllers
         public IActionResult BCD()
         {
             var model = BCDRepository.GetAll();
-            return View();
+            return View(model);
         }
 
         public IActionResult Pakke()
