@@ -37,7 +37,7 @@ namespace diveDeep.Controllers
         public IActionResult Dykkerdragt()
         {
             var model = DykkerdragtRpeository.GetAll();
-            return View();
+            return View(model);
         }
 
         public IActionResult BCD()
