@@ -41,7 +41,7 @@ namespace diveDeep.Persistence
         };
 
         public static IEnumerable<BCD> GetAll() => _bcd;
-        //public static BCD GetByModel(string model) => _bcd.Find(b => b.Model == model);
+        public static BCD GetByModel(string model) => _bcd.Find(b => b.Model == model);
     }
 
 }
