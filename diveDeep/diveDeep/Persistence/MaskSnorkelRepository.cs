@@ -2,54 +2,54 @@
 
 namespace diveDeep.Persistence
 {
-    public static class Mask_SnorkelRepository
+    public static class MaskSnorkelRepository
     {
-        private static readonly List<Mask_Snorkel> _mask = new()
+        private static readonly List<MaskSnorkel> _mask = new()
         {
 
-            new Mask_Snorkel
+            new MaskSnorkel
             {
                 Brand = "Scubapro",
                 Model = "Ghost",
                 PricePrDay = 50
             },
 
-            new Mask_Snorkel
+            new MaskSnorkel
             {
                 Brand = "Scubapro",
                 Model = "D-Mask",
                 PricePrDay = 60
             },
 
-            new Mask_Snorkel
+            new MaskSnorkel
             {
                 Brand = "Scubapro",
                 Model = "Spectra Mini",
                 PricePrDay = 50
             },
 
-            new Mask_Snorkel
+            new MaskSnorkel
             {
                 Brand = "Scubapro",
                 Model = "Crystal VU",
                 PricePrDay = 75
             },
 
-            new Mask_Snorkel
+            new MaskSnorkel
             {
                 Brand = "Fourth Element",
                 Model = "Scout Kontrast",
                 PricePrDay = 75
             },
 
-            new Mask_Snorkel
+            new MaskSnorkel
             {
                 Brand = "Fourth Element",
                 Model = "Scout Enhance",
                 PricePrDay = 75
             },
 
-            new Mask_Snorkel
+            new MaskSnorkel
             {
                 Brand = "Tusa",
                 Model = "Element",
