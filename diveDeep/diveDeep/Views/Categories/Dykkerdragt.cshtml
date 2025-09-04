@@ -1,2 +1,39 @@
-﻿
-<h3>Dykkerdragt Her</h3>
+﻿@model IEnumerable<diveDeep.Models.Dykkerdragt>
+
+<h3>Dykkerdragter</h3>
+
+@if (Model == null || !Model.Any())
+{
+    <p>Ingen dykkerdragter fundet.</p>
+}
+else
+{
+    <div class="row g-3">
+        @foreach (var item in Model)
+        {
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="@item.ImageUrl" alt="@item.Model" class="product-img" />
+
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Brand</h5>
+
+                            <div class="row">
+                            <div class="col-6">
+                                <p class="card-text mb-1"><strong>Model:</strong> @item.Model</p>
+                                <p class="card-text mb-1"><strong>Type:</strong> @item.Type</p>
+                                <p class="card-text mb-1"><strong>Køn:</strong> @item.Gender</p>
+                            </div>
+
+                            <div class="col-6">
+                                <p class="card-text mb-1"><strong>Tykkelse:</strong> @(item.Thickness?.ToString("0.#") ?? "N/A") mm</p>
+                                <p class="card-text mb-1"><strong>Størrelser:</strong> @string.Join(", ", item.Size)</p>
+                                <p class="card-text"><strong>Pris/dag:</strong> @item.PricePrDay.ToString("0") kr</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
