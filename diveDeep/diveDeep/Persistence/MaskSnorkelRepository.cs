@@ -58,7 +58,7 @@ namespace diveDeep.Persistence
 
         };
 
-        public static IEnumerable<Mask_Snorkel> GetAll() => _mask;
+        public static IEnumerable<MaskSnorkel> GetAll() => _mask;
 
     }
 

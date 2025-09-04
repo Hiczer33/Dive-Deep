@@ -12,6 +12,7 @@ else
         @foreach (var item in Model)
         {
             <div class="col-12 col-sm-6 col-lg-4">
+                <a class="text-decoration-none" href="#">
                 <div class="card h-100">
                     <img src="@item.ImageUrl" alt="@item.Model" class="product-img" />
                     <div class="card-body">
@@ -21,6 +22,7 @@ else
                         <p class="card-text"><strong>Pris/dag:</strong> @item.PricePrDay.ToString("0") kr</p>
                     </div>
                 </div>
+            </a>
             </div>
         }
     </div>
