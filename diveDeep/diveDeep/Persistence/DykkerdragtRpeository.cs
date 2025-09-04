@@ -16,6 +16,7 @@ namespace diveDeep.Persistence
                             Gender = "Herre/Dame",
                             Thickness = 3,
                             PricePrDay = 100,
+                            ImageUrl = "\\Images\\Dykkerdragter\\Scubapro_Difinition3mm.webp"
                         },
                         new Dykkerdragt
                         {
@@ -26,6 +27,8 @@ namespace diveDeep.Persistence
                             Gender = "Herre/Dame",
                             Thickness = 5,
                             PricePrDay = 100,
+                            ImageUrl = "\\Images\\Dykkerdragter\\Scubapro_Difinition3mm.webp"
+
                         },
                         new Dykkerdragt
                         {
@@ -36,6 +39,8 @@ namespace diveDeep.Persistence
                             Gender = "Herre/Dame",
                             Thickness = 7,
                             PricePrDay = 100,
+                            ImageUrl = "\\Images\\Dykkerdragter\\Scubapro_Difinition3mm.webp"
+
                         },
                         new Dykkerdragt
                         {
@@ -46,6 +51,9 @@ namespace diveDeep.Persistence
                             Gender = "Herre/Dame",
                             Thickness = 3.5,
                             PricePrDay = 100,
+                            ImageUrl = "\\Images\\Dykkerdragter\\Scubapro_Difinition3mm.webp"
+
+
                         },
                         new Dykkerdragt
                         {
@@ -56,6 +64,8 @@ namespace diveDeep.Persistence
                             Gender = "Herre/Dame",
                             Thickness = 5,
                             PricePrDay = 120,
+                            ImageUrl = "\\Images\\Dykkerdragter\\Scubapro_Difinition3mm.webp"
+
                         },
                         new Dykkerdragt
                         {
@@ -66,6 +76,8 @@ namespace diveDeep.Persistence
                             Gender = "Herre/Dame",
                             Thickness = null,
                             PricePrDay = 300,
+                            ImageUrl = "\\Images\\Dykkerdragter\\Scubapro_Difinition3mm.webp"
+
                         },
                         new Dykkerdragt
                         {
@@ -76,6 +88,8 @@ namespace diveDeep.Persistence
                             Gender = "Herre/Dame",
                             Thickness = null,
                             PricePrDay = 320,
+                            ImageUrl = "\\Images\\Dykkerdragter\\Scubapro_Difinition3mm.webp"
+
                         },
                         new Dykkerdragt
                         {
@@ -86,6 +100,8 @@ namespace diveDeep.Persistence
                             Gender = "Herre/Dame",
                             Thickness = null,
                             PricePrDay = 350,
+                            ImageUrl = "\\Images\\Dykkerdragter\\Scubapro_Difinition3mm.webp"
+
                         }
                     };
         public static IEnumerable<Dykkerdragt> GetAll() => _dykkerdragt;
