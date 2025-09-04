@@ -34,5 +34,8 @@ namespace diveDeep.Persistence
 
 
         };
+
+        public static IEnumerable<Tank> GetAll() => _tank;
+
     }
 }

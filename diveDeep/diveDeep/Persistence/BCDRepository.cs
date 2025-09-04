@@ -39,8 +39,8 @@ namespace diveDeep.Persistence
                 PricePrDay = 145
             }
         };
-       
-        //public static IEnumerable<BCD> GetAll() => _bcd;
+
+        public static IEnumerable<BCD> GetAll() => _bcd;
         //public static BCD GetByModel(string model) => _bcd.Find(b => b.Model == model);
     }
 

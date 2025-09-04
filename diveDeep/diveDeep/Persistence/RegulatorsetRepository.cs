@@ -36,5 +36,8 @@ namespace diveDeep.Persistence
             }
 
         };
+
+        public static IEnumerable<Regulatorset> GetAll() => _regulartor;
+
     }
 }

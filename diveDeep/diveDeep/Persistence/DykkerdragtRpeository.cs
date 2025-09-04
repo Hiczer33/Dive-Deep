@@ -88,5 +88,6 @@ namespace diveDeep.Persistence
                             PricePrDay = 350,
                         }
                     };
+        public static IEnumerable<Dykkerdragt> GetAll() => _dykkerdragt;
     }
 }

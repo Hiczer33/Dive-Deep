@@ -57,6 +57,9 @@ namespace diveDeep.Persistence
             }
 
         };
+
+        public static IEnumerable<Mask_Snorkel> GetAll() => _mask;
+
     }
 
 }

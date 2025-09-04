@@ -64,5 +64,7 @@ namespace diveDeep.Persistence
             }
 
         };
+        public static IEnumerable<Fins> GetAll() => _fins;
+
     }
 }

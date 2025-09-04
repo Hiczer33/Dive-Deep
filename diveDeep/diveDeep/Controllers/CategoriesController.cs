@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using diveDeep.Persistence;
+using Microsoft.AspNetCore.Mvc;
 
 namespace diveDeep.Controllers
 {
@@ -11,36 +12,43 @@ namespace diveDeep.Controllers
 
         public IActionResult Finner()
         {
+            var model = FinsRepository.GetAll();
             return View();
         }
 
         public IActionResult MaskeSnorkel()
         {
+            var model = Mask_SnorkelRepository.GetAll();
             return View();
         }
 
         public IActionResult Regulatorsæt()
         {
+            var model = RegulatorsetRepository.GetAll();
             return View();
         }
 
         public IActionResult Tank()
         {
+            var model = TankRepository.GetAll();
             return View();
         }
 
         public IActionResult Dykkerdragt()
         {
+            var model = DykkerdragtRpeository.GetAll();
             return View();
         }
 
         public IActionResult BCD()
         {
+            var model = BCDRepository.GetAll();
             return View();
         }
 
         public IActionResult Pakke()
         {
+
             return View();
         }
     }
