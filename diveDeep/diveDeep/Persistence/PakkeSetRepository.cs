@@ -14,9 +14,16 @@ namespace diveDeep.Persistence
                 PricePrDay = 500,
                 SetInformation = "BCD, Dykkerdragt, Regulatorsæt, Tank, Finner, Maske, Snorkel",
                 ImageUrl = "\\Images\\DykkerSet\\kompletdykkerset.webp"
-            }
+            },
 
-           
+           new PakkeSet
+           {
+               Title="Komplet Snorkelsæt",
+               PricePrDay=400,
+               SetInformation ="Maske/Snorkel,Finner",
+               ImageUrl="\\Images\\DykkerSet\\kompletMaskeFInner.jpg"
+
+           }
         };
         public static IEnumerable<PakkeSet> GetAll() => _pakkeset;
 
