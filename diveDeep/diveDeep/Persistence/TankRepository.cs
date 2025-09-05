@@ -10,7 +10,7 @@ namespace diveDeep.Persistence
             {
                 Brand = "Scubapro",
                 Volume = 5,
-                PricePrDay = 150
+                PricePrDay = 150,
             },
             new Tank
             {
