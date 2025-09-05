@@ -46,10 +46,10 @@ namespace diveDeep.Controllers
             return View(model);
         }
 
-        public IActionResult Pakke()
+        public IActionResult PakkeSet()
         {
-
-            return View();
+            var model = PakkeSetRepository.GetAll();
+            return View(model);
         }
     }
 }
