@@ -7,6 +7,8 @@
         public string SecondStep { get; set; }
         public string Octopus { get; set; }
         public double PricePrDay { get; set; }
+        public string ImageUrl { get; set; }
+
 
     }
 }
