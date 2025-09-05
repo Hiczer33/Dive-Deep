@@ -12,7 +12,8 @@ namespace diveDeep.Persistence
                 Brand = "Scubapro",
                 Model = "Jet Fin",
                 Size = new List<SizeType> {SizeType.XS ,SizeType.S, SizeType.M, SizeType.L, SizeType.XL},
-                PricePrDay = 50
+                PricePrDay = 50,
+                ImageUrl = "\\Images\\Finner\\Scubapro_JetFin.jpg"
             },
 
             new Fins
@@ -20,7 +21,9 @@ namespace diveDeep.Persistence
                 Brand = "Scubapro",
                 Model = "GO Travel",
                 Size = new List<SizeType> {SizeType.XS ,SizeType.S, SizeType.M, SizeType.L, SizeType.XL},
-                PricePrDay = 50
+                PricePrDay = 50,
+                ImageUrl = "\\Images\\Finner\\Scubapro_JetFin.jpg"
+
             },
             
             new Fins
@@ -28,7 +31,9 @@ namespace diveDeep.Persistence
                 Brand = "Scubapro",
                 Model = "Seawing Supernova",
                 Size = new List<SizeType> {SizeType.XS ,SizeType.S, SizeType.M, SizeType.L, SizeType.XL},
-                PricePrDay = 60
+                PricePrDay = 60,
+                ImageUrl = "\\Images\\Finner\\Scubapro_JetFin.jpg"
+
             },
 
             new Fins
@@ -36,7 +41,9 @@ namespace diveDeep.Persistence
                 Brand = "Seac",
                 Model = "Propulsion",
                 Size = new List<SizeType> {SizeType.XS ,SizeType.S, SizeType.M, SizeType.L, SizeType.XL},
-                PricePrDay = 50
+                PricePrDay = 50,
+                ImageUrl = "\\Images\\Finner\\Scubapro_JetFin.jpg"
+
             },
 
             new Fins
@@ -44,7 +51,8 @@ namespace diveDeep.Persistence
                 Brand = "Seac",
                 Model = "ALA",
                 Size = new List<SizeType> {SizeType.XS ,SizeType.S, SizeType.M, SizeType.L, SizeType.XL},
-                PricePrDay = 50
+                PricePrDay = 50,
+                ImageUrl = "\\Images\\Finner\\Scubapro_JetFin.jpg"
             },
 
             new Fins
@@ -52,7 +60,9 @@ namespace diveDeep.Persistence
                 Brand = "Fourth Element",
                 Model = "Tech",
                 Size = new List<SizeType> {SizeType.XS ,SizeType.S, SizeType.M, SizeType.L, SizeType.XL},
-                PricePrDay = 75
+                PricePrDay = 75,
+                ImageUrl = "\\Images\\Finner\\Scubapro_JetFin.jpg"
+
             },
 
             new Fins
@@ -60,7 +70,9 @@ namespace diveDeep.Persistence
                 Brand = "Fourth Element",
                 Model = "Rec Fin",
                 Size = new List<SizeType> {SizeType.XS ,SizeType.S, SizeType.M, SizeType.L, SizeType.XL},
-                PricePrDay = 80
+                PricePrDay = 80,
+                ImageUrl = "\\Images\\Finner\\Scubapro_JetFin.jpg"
+
             }
 
         };

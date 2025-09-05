@@ -13,7 +13,7 @@ namespace diveDeep.Controllers
         public IActionResult Finner()
         {
             var model = FinsRepository.GetAll();
-            return View();
+            return View(model);
         }
 
         public IActionResult MaskeSnorkel()
@@ -25,7 +25,7 @@ namespace diveDeep.Controllers
         public IActionResult Regulatorsæt()
         {
             var model = RegulatorsetRepository.GetAll();
-            return View();
+            return View(model);
         }
 
         public IActionResult Tank()
