@@ -25,11 +25,9 @@ else
                             <div class="col-6">
                                 <p class="card-text mb-1"><strong>Model:</strong> @item.Model</p>
                                 <p class="card-text mb-1"><strong>Type:</strong> @item.Type</p>
-                                <p class="card-text mb-1"><strong>Køn:</strong> @item.Gender</p>
                             </div>
 
                             <div class="col-6">
-                                <p class="card-text mb-1"><strong>Tykkelse:</strong> @(item.Thickness?.ToString("0.#") ?? "N/A") mm</p>
                                 <p class="card-text mb-1"><strong>Størrelser:</strong> @string.Join(", ", item.Size)</p>
                                 <p class="card-text"><strong>Pris/dag:</strong> @item.PricePrDay.ToString("0") kr</p>
                             </div>
