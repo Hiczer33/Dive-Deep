@@ -1,0 +1,42 @@
+﻿@model IEnumerable<diveDeep.Models.PakkeSet>
+<h3>Komplette Pakkesæt</h3>
+@if (Model == null || !Model.Any())
+{
+    <p>Ingen Pakkesæt fundet.</p>
+}
+else
+{
+
+    <div class="row g-3">
+        @foreach (var item in Model)
+        {
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <a class="text-decoration-none" href="#">
+                    <div class="card h-100">
+                        <img src="@item.ImageUrl" alt="Mangler Billede" class="product-img" />
+
+                        <div class="card-body">
+                            <h5 class="card-title">@item.Title</h5>
+
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="card-text mb-1"><strong>Indholder:</strong> @item.SetInformation</p>
+
+
+                                </div>
+
+                                <div class="col-6">
+
+                                    <p class="card-text"><strong>Pris/dag:</strong> @item.PricePrDay.ToString("0") kr</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+        }
+    </div>
+}
