@@ -11,49 +11,56 @@ namespace diveDeep.Persistence
             {
                 Brand = "Scubapro",
                 Model = "Ghost",
-                PricePrDay = 50
+                PricePrDay = 50,
+                ImageUrl = "\\Images\\MakseSnorkel\\Scubapro_Ghost.jpg"
             },
 
             new MaskSnorkel
             {
                 Brand = "Scubapro",
                 Model = "D-Mask",
-                PricePrDay = 60
+                PricePrDay = 60,
+                ImageUrl = "\\Images\\MakseSnorkel\\Scubapro_Ghost.jpg"
             },
 
             new MaskSnorkel
             {
                 Brand = "Scubapro",
                 Model = "Spectra Mini",
-                PricePrDay = 50
+                PricePrDay = 50,
+                ImageUrl = "\\Images\\MakseSnorkel\\Scubapro_Ghost.jpg"
             },
 
             new MaskSnorkel
             {
                 Brand = "Scubapro",
                 Model = "Crystal VU",
-                PricePrDay = 75
+                PricePrDay = 75,
+               ImageUrl = "\\Images\\MakseSnorkel\\Scubapro_Ghost.jpg"
             },
 
             new MaskSnorkel
             {
                 Brand = "Fourth Element",
                 Model = "Scout Kontrast",
-                PricePrDay = 75
+                PricePrDay = 75,
+              ImageUrl = "\\Images\\MakseSnorkel\\Scubapro_Ghost.jpg"
             },
 
             new MaskSnorkel
             {
                 Brand = "Fourth Element",
                 Model = "Scout Enhance",
-                PricePrDay = 75
+                PricePrDay = 75,
+                ImageUrl = "\\Images\\MakseSnorkel\\Scubapro_Ghost.jpg"
             },
 
             new MaskSnorkel
             {
                 Brand = "Tusa",
                 Model = "Element",
-                PricePrDay = 75
+                PricePrDay = 75,
+                ImageUrl ="\\Images\\MakseSnorkel\\Scubapro_Ghost.jpg"
             }
 
         };

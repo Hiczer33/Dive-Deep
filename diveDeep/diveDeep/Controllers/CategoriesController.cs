@@ -19,7 +19,7 @@ namespace diveDeep.Controllers
         public IActionResult MaskeSnorkel()
         {
             var model = MaskSnorkelRepository.GetAll();
-            return View();
+            return View(model);
         }
 
         public IActionResult Regulatorsæt()
@@ -31,7 +31,7 @@ namespace diveDeep.Controllers
         public IActionResult Tank()
         {
             var model = TankRepository.GetAll();
-            return View();
+            return View(model);
         }
 
         public IActionResult Dykkerdragt()
