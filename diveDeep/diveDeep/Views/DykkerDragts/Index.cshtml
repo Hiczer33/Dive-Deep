@@ -8,14 +8,25 @@
         <p class="card-text mb-1"><strong>Brand: </strong>@Model.Brand </p>
         <p class="card-text mb-1"><strong>Model: </strong>@Model.Model </p>
         <p class="card-text mb-1"><strong>Pris/dag: </strong> @Model.PricePrDay </p>
-        <label for="cars">Vægle sø:</label>
-        <select name="cars" id="cars">
-            
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="audi">Audi</option>
-      
-        </select>
+        <div class="mb-3">
+            <label for="size" class="form-label"><strong>Størrelse: </strong></label>
+            <select id="size" name="SelectedSize" class="form-select">
+                @foreach (var size in Model.Size)   // Model.Size er List<SizeType> fx S, M, L
+                {
+                    <option value="@size">@size</option>
+                }
+
+            </select>
+            <div class="mb-3">
+                <label for="gender" class="form-label"><strong>Køn: </strong></label>
+                <select id="gender" name="SelectedSize" class="form-select">
+        public List<GenderType> Gender { get; set; }
+                    @foreach (var size in Model.Gender)   // Model.Size er List<SizeType> fx S, M, L
+                    {
+                        <option value="@size">@size</option>
+                    }
+
+                </select>
+        </div>
     </div>
 </div>

@@ -13,7 +13,7 @@ namespace diveDeep.Persistence
                             Model = "Definition",
                             Size = new List<SizeType> { SizeType.XS, SizeType.S, SizeType.M, SizeType.L, SizeType.XL },
                             Type = "Våddragt",
-                            Gender = "Herre/Dame",
+                            Gender = new List<GenderType>{GenderType.Mand ,GenderType.Kvinde },
                             Thickness = 3,
                             PricePrDay = 100,
                             ImageUrl = "\\Images\\Dykkerdragter\\Scubapro_Difinition3mm.webp",
@@ -25,7 +25,7 @@ namespace diveDeep.Persistence
                             Model = "Definition",
                             Size = new List<SizeType> { SizeType.XS, SizeType.S, SizeType.M, SizeType.L, SizeType.XL },
                             Type = "Våddragt",
-                            Gender = "Herre/Dame",
+                            Gender = new List<GenderType>{GenderType.Mand ,GenderType.Kvinde},
                             Thickness = 5,
                             PricePrDay = 100,
                             ImageUrl = "\\Images\\Dykkerdragter\\Scubapro_Difinition3mm.webp"
@@ -38,7 +38,7 @@ namespace diveDeep.Persistence
                             Model = "Definition",
                             Size = new List<SizeType> { SizeType.XS, SizeType.S, SizeType.M, SizeType.L, SizeType.XL },
                             Type = "Våddragt",
-                            Gender = "Herre/Dame",
+                            Gender = new List < GenderType > { GenderType.Mand, GenderType.Kvinde },
                             Thickness = 7,
                             PricePrDay = 100,
                             ImageUrl = "\\Images\\Dykkerdragter\\Scubapro_Difinition3mm.webp"
@@ -50,7 +50,7 @@ namespace diveDeep.Persistence
                             Model = "W5",
                             Size = new List<SizeType> { SizeType.XS, SizeType.S, SizeType.M, SizeType.L, SizeType.XL },
                             Type = "Våddragt",
-                            Gender = "Herre/Dame",
+                            Gender = new List < GenderType > { GenderType.Mand, GenderType.Kvinde },
                             Thickness = 3.5,
                             PricePrDay = 100,
                             ImageUrl = "\\Images\\Dykkerdragter\\Scubapro_Difinition3mm.webp"
@@ -63,7 +63,7 @@ namespace diveDeep.Persistence
                             Model = "Proteus",
                             Size = new List<SizeType> { SizeType.XS, SizeType.S, SizeType.M, SizeType.L, SizeType.XL },
                             Type = "Våddragt",
-                            Gender = "Herre/Dame",
+                            Gender = new List < GenderType > { GenderType.Mand, GenderType.Kvinde },
                             Thickness = 5,
                             PricePrDay = 120,
                             ImageUrl = "\\Images\\Dykkerdragter\\Scubapro_Difinition3mm.webp"
@@ -75,7 +75,7 @@ namespace diveDeep.Persistence
                             Model = "Exodry 4.0",
                             Size = new List<SizeType> { SizeType.XS, SizeType.S, SizeType.M, SizeType.L, SizeType.XL },
                             Type = "Tørdragt",
-                            Gender = "Herre/Dame",
+                            Gender = new List < GenderType > { GenderType.Mand, GenderType.Kvinde },
                             Thickness = null,
                             PricePrDay = 300,
                             ImageUrl = "\\Images\\Dykkerdragter\\Scubapro_Difinition3mm.webp"
@@ -87,7 +87,7 @@ namespace diveDeep.Persistence
                             Model = "D7 Evo",
                             Size = new List<SizeType> { SizeType.XS, SizeType.S, SizeType.M, SizeType.L, SizeType.XL },
                             Type = "Tørdragt",
-                            Gender = "Herre/Dame",
+                            Gender = new List < GenderType > { GenderType.Mand, GenderType.Kvinde },
                             Thickness = null,
                             PricePrDay = 320,
                             ImageUrl = "\\Images\\Dykkerdragter\\Scubapro_Difinition3mm.webp"
@@ -99,7 +99,7 @@ namespace diveDeep.Persistence
                             Model = "E.Lite Plus",
                             Size = new List<SizeType> { SizeType.XS, SizeType.S, SizeType.M, SizeType.L, SizeType.XL },
                             Type = "Tørdragt",
-                            Gender = "Herre/Dame",
+                            Gender = new List < GenderType > { GenderType.Mand, GenderType.Kvinde },
                             Thickness = null,
                             PricePrDay = 350,
                             ImageUrl = "\\Images\\Dykkerdragter\\Scubapro_Difinition3mm.webp"
