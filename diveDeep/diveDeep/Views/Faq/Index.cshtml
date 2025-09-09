@@ -1,27 +1,81 @@
-﻿<h2>FAQ – Udlejning af dykkerudstyr</h2>
+﻿
+<main class="wrap">
 
-<p class="FaqFont ">Hvad skal jeg have med for at leje?</p>
-<p class="FaqSvar FaqBorder">Svar: Et gyldigt dykkercertifikat og legitimation.</p>
+    <details>
+        <summary>Hvad skal jeg have med for at leje?</summary>
+        <div class="a">Et gyldigt dykkercertifikat og legitimation.</div>
+    </details>
 
-<p class="FaqFont">Hvor længe kan jeg leje?</p>
-<p class="FaqSvar FaqBorder">Svar: Så længe du har brug for, hvis muligt.</p>
+    <details>
+        <summary>Hvor dybt må jeg dykke?</summary>
+        <div class="a">Hold dig inden for dit certifikat og forholdene.</div>
+    </details>
 
-<p class="FaqFont">Hvordan rengøres udstyret?</p>
-<p class="FaqSvar FaqBorder">Svar: Vi rengør og desinficerer alt udstyr grundigt efter hver udlejning.</p>
+    <details>
+        <summary>Hvad er et sikkerhedsstop?</summary>
+        <div class="a">Et frivilligt stop i ca. 3 minutter ved ~5 m for en rolig afslutning på dykket. Bruges på de fleste dyk.</div>
+    </details>
 
+    <details>
+        <summary>Hvordan undgår jeg dug i masken?</summary>
+        <div class="a">Rens ny maske let, brug anti-fog før dyk, undgå at røre indersiden og skyl i ferskvand efter dyk.</div>
+    </details>
+
+    <details>
+        <summary>Hvordan rengøres udstyret?</summary>
+        <div class="a">Vi rengør og desinficerer alt udstyr grundigt efter hver udlejning.</div>
+    </details>
+
+    <small class="note"><strong>Bemærk:</strong> Denne FAQ erstatter ikke uddannelse, dykkerbriefing eller medicinsk rådgivning.</small>
+</main>
 <style>
-    .FaqFont {
-        font-weight: bold;
-        font-size: 1.5em;
-        margin-top: 1em;
-        margin-left: 1em;
+    body {
+        font: 16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+        margin: 0;
+        padding: 24px;
+        background: #f7f7f7;
+        color: #222
     }
 
-    .FaqSvar {
-        display: inline-block;
-        font-size: 1.2em;
-        margin-left: 1.3em;
-        color: #333;
-        border-bottom: 1px solid #000;
+    .wrap {
+        max-width: 780px;
+        margin: auto
+    }
+
+    h1 
+        margin: 0 0 8px
+    }
+
+    p.sub {
+        margin: 0 0 20px;
+        color: #555
+    }
+
+    details {
+        background: #fff;
+        border: 1px solid #e5e5e5;
+        border-radius: 10px;
+        margin: 10px 0;
+        overflow: hidden
+    }
+
+    summary {
+        cursor: pointer;
+        padding: 12px 14px;
+        font-weight: 600
+    }
+
+    details[open] summary {
+        border-bottom: 1px solid #eee
+    }
+
+    .a {
+        padding: 12px 14px
+    }
+
+    small.note {
+        display: block;
+        margin-top: 16px;
+        color: #666
     }
 </style>
