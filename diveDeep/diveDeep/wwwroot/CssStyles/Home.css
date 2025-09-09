@@ -55,9 +55,16 @@
     display: block;
 }
 .product-card {
-    border: 3px solid #333; /* tykkere og mørkere linje */
-    border-radius: 10px; /* rundede hjørner (kan fjernes) */
-    padding: 15px; /* luft indeni */
-    margin-bottom: 20px; /* afstand til næste element */
-    background-color: #fff; /* sikrer kontrast mod baggrunden */
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+        transform: translateY(-5px); 
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        border-color: #333;
 }
