@@ -95,3 +95,10 @@
         box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
         border-color: #333;
 }
+
+.Showcase {
+    width: 200px; /* ens bredde */
+    height: 200px; /* ens højde */
+    object-fit: cover; /* beskærer billedet så det passer uden at forvrænge */
+    border-radius: 8px; /* valgfrit, giver runde hjørner */
+}
