@@ -51,12 +51,5 @@ namespace diveDeep.Controllers
             var model = PakkeSetRepository.GetAll();
             return View(model);
         }
-        public IActionResult SpecificProduct(int? id)
-        {
-            ViewBag.Action = "Edit";
-            var movie = cat.GetById(id.HasValue ? id.Value : 0);
-            return View(movie);
-        }
-        [HttpPost]
     }
 }
