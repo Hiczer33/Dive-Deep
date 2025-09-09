@@ -8,6 +8,7 @@ namespace diveDeep.Persistence
         {
             new Tank
             {
+                TankID = 1,
                 Brand = "Scubapro",
                 Volume = 5,
                 PricePrDay = 150,
@@ -15,7 +16,7 @@ namespace diveDeep.Persistence
 
             },
             new Tank
-            {
+            {   TankID = 2,
                 Brand = "Scubapro",
                 Volume = 10,
                 PricePrDay = 160,
@@ -23,7 +24,7 @@ namespace diveDeep.Persistence
 
             },
             new Tank
-            {
+            {   TankID= 3,
                 Brand = "Scubapro",
                 Volume = 12,
                 PricePrDay = 170,
@@ -31,7 +32,7 @@ namespace diveDeep.Persistence
 
 
             },new Tank
-            {
+            {   TankID=4,
                 Brand = "Scubapro",
                 Volume = 15,
                 PricePrDay = 170,

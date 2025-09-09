@@ -1,5 +1,5 @@
-﻿using diveDeep.Models;
-using diveDeep.Enum;
+﻿using diveDeep.Enum;
+using diveDeep.Models;
 
 
 namespace diveDeep.Persistence
@@ -9,7 +9,7 @@ namespace diveDeep.Persistence
         private static readonly List<BCD> _bcd = new()
         {
             new BCD
-            {
+            {   BCDId = 1,
                 Brand = "Scubapro",
                 Model = "Navigator Lite BCD",
                 Size = new List<SizeType> { SizeType.S, SizeType.M, SizeType.L },
@@ -18,7 +18,7 @@ namespace diveDeep.Persistence
             },
 
             new BCD
-            {
+            {   BCDId=2,
                 Brand = "Scubapro",
                 Model = "BCD Glide",
                 Size = new List<SizeType> { SizeType.S, SizeType.M, SizeType.L },
@@ -27,6 +27,7 @@ namespace diveDeep.Persistence
             },
             new BCD
             {
+                BCDId=3,
                 Brand = "Scubapro",
                 Model = "BCD Hydros Pro",
                 Size = new List<SizeType> { SizeType.S, SizeType.M, SizeType.L },
@@ -35,7 +36,7 @@ namespace diveDeep.Persistence
             },
 
             new BCD
-            {
+            {   BCDId=4,
                 Brand = "Seac",
                 Model = "BCD Modular",
                 Size = new List<SizeType> { SizeType.S, SizeType.M, SizeType.L },
@@ -44,6 +45,10 @@ namespace diveDeep.Persistence
             }
         };
 
+        public static BCD? GetById(int id)
+        {
+            return _bcd.FirstOrDefault(x => x.BCDId == id);
+        }
         public static IEnumerable<BCD> GetAll() => _bcd;
         public static BCD GetByModel(string model) => _bcd.Find(b => b.Model == model);
     }

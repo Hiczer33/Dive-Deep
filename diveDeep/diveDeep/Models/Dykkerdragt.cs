@@ -3,6 +3,7 @@ namespace diveDeep.Models
 {
     public class Dykkerdragt
     {
+        public int DykkerDragtID { get; set; }
         public string Brand { get; set; }
         public string Model { get; set; }
         public List<SizeType> Size { get; set; }

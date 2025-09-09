@@ -1,5 +1,5 @@
-﻿using diveDeep.Models;
-using diveDeep.Enum;
+﻿using diveDeep.Enum;
+using diveDeep.Models;
 
 namespace diveDeep.Persistence
 {
@@ -8,7 +8,7 @@ namespace diveDeep.Persistence
         private static readonly List<Dykkerdragt> _dykkerdragt = new()
                     {
                         new Dykkerdragt
-                        {
+                        {   DykkerDragtID=1,
                             Brand = "Scubapro",
                             Model = "Definition",
                             Size = new List<SizeType> { SizeType.XS, SizeType.S, SizeType.M, SizeType.L, SizeType.XL },
@@ -19,7 +19,7 @@ namespace diveDeep.Persistence
                             ImageUrl = "\\Images\\Dykkerdragter\\Scubapro_Difinition3mm.webp"
                         },
                         new Dykkerdragt
-                        {
+                        {   DykkerDragtID = 2,
                             Brand = "Scubapro",
                             Model = "Definition",
                             Size = new List<SizeType> { SizeType.XS, SizeType.S, SizeType.M, SizeType.L, SizeType.XL },
@@ -32,6 +32,7 @@ namespace diveDeep.Persistence
                         },
                         new Dykkerdragt
                         {
+                            DykkerDragtID =3,
                             Brand = "Scubapro",
                             Model = "Definition",
                             Size = new List<SizeType> { SizeType.XS, SizeType.S, SizeType.M, SizeType.L, SizeType.XL },
@@ -43,7 +44,7 @@ namespace diveDeep.Persistence
 
                         },
                         new Dykkerdragt
-                        {
+                        {   DykkerDragtID=4,
                             Brand = "Waterproof",
                             Model = "W5",
                             Size = new List<SizeType> { SizeType.XS, SizeType.S, SizeType.M, SizeType.L, SizeType.XL },
@@ -56,7 +57,7 @@ namespace diveDeep.Persistence
 
                         },
                         new Dykkerdragt
-                        {
+                        {   DykkerDragtID =5,
                             Brand = "Fourth Element",
                             Model = "Proteus",
                             Size = new List<SizeType> { SizeType.XS, SizeType.S, SizeType.M, SizeType.L, SizeType.XL },
@@ -68,7 +69,7 @@ namespace diveDeep.Persistence
 
                         },
                         new Dykkerdragt
-                        {
+                        {   DykkerDragtID=6,
                             Brand = "Scubapro",
                             Model = "Exodry 4.0",
                             Size = new List<SizeType> { SizeType.XS, SizeType.S, SizeType.M, SizeType.L, SizeType.XL },
@@ -80,7 +81,7 @@ namespace diveDeep.Persistence
 
                         },
                         new Dykkerdragt
-                        {
+                        {   DykkerDragtID=7,
                             Brand = "Waterproof",
                             Model = "D7 Evo",
                             Size = new List<SizeType> { SizeType.XS, SizeType.S, SizeType.M, SizeType.L, SizeType.XL },
@@ -92,7 +93,7 @@ namespace diveDeep.Persistence
 
                         },
                         new Dykkerdragt
-                        {
+                        {   DykkerDragtID = 8,
                             Brand = "Santi",
                             Model = "E.Lite Plus",
                             Size = new List<SizeType> { SizeType.XS, SizeType.S, SizeType.M, SizeType.L, SizeType.XL },

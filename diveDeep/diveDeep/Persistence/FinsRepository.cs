@@ -1,5 +1,5 @@
-﻿using diveDeep.Models;
-using diveDeep.Enum;
+﻿using diveDeep.Enum;
+using diveDeep.Models;
 
 namespace diveDeep.Persistence
 {
@@ -9,6 +9,7 @@ namespace diveDeep.Persistence
         {
             new Fins
             {
+                FinsID =1,
                 Brand = "Scubapro",
                 Model = "Jet Fin",
                 Size = new List<SizeType> {SizeType.XS ,SizeType.S, SizeType.M, SizeType.L, SizeType.XL},
@@ -17,7 +18,7 @@ namespace diveDeep.Persistence
             },
 
             new Fins
-            {
+            {   FinsID =2,
                 Brand = "Scubapro",
                 Model = "GO Travel",
                 Size = new List<SizeType> {SizeType.XS ,SizeType.S, SizeType.M, SizeType.L, SizeType.XL},
@@ -25,9 +26,9 @@ namespace diveDeep.Persistence
                 ImageUrl = "\\Images\\Finner\\Scubapro_JetFin.jpg"
 
             },
-            
+
             new Fins
-            {
+            {   FinsID=3,
                 Brand = "Scubapro",
                 Model = "Seawing Supernova",
                 Size = new List<SizeType> {SizeType.XS ,SizeType.S, SizeType.M, SizeType.L, SizeType.XL},
@@ -37,7 +38,7 @@ namespace diveDeep.Persistence
             },
 
             new Fins
-            {
+            {   FinsID=4,
                 Brand = "Seac",
                 Model = "Propulsion",
                 Size = new List<SizeType> {SizeType.XS ,SizeType.S, SizeType.M, SizeType.L, SizeType.XL},
@@ -48,6 +49,7 @@ namespace diveDeep.Persistence
 
             new Fins
             {
+                FinsID=5,
                 Brand = "Seac",
                 Model = "ALA",
                 Size = new List<SizeType> {SizeType.XS ,SizeType.S, SizeType.M, SizeType.L, SizeType.XL},
@@ -56,7 +58,7 @@ namespace diveDeep.Persistence
             },
 
             new Fins
-            {
+            {   FinsID=6,
                 Brand = "Fourth Element",
                 Model = "Tech",
                 Size = new List<SizeType> {SizeType.XS ,SizeType.S, SizeType.M, SizeType.L, SizeType.XL},
@@ -67,6 +69,7 @@ namespace diveDeep.Persistence
 
             new Fins
             {
+                FinsID=7,
                 Brand = "Fourth Element",
                 Model = "Rec Fin",
                 Size = new List<SizeType> {SizeType.XS ,SizeType.S, SizeType.M, SizeType.L, SizeType.XL},

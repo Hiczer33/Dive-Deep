@@ -8,7 +8,7 @@ namespace diveDeep.Persistence
         {
 
             new MaskSnorkel
-            {
+            {   MaskSnorkelID =1,
                 Brand = "Scubapro",
                 Model = "Ghost",
                 PricePrDay = 50,
@@ -16,7 +16,7 @@ namespace diveDeep.Persistence
             },
 
             new MaskSnorkel
-            {
+            {   MaskSnorkelID=2,
                 Brand = "Scubapro",
                 Model = "D-Mask",
                 PricePrDay = 60,
@@ -25,6 +25,7 @@ namespace diveDeep.Persistence
 
             new MaskSnorkel
             {
+                MaskSnorkelID=3,
                 Brand = "Scubapro",
                 Model = "Spectra Mini",
                 PricePrDay = 50,
@@ -32,7 +33,7 @@ namespace diveDeep.Persistence
             },
 
             new MaskSnorkel
-            {
+            {   MaskSnorkelID=4,
                 Brand = "Scubapro",
                 Model = "Crystal VU",
                 PricePrDay = 75,
@@ -41,6 +42,7 @@ namespace diveDeep.Persistence
 
             new MaskSnorkel
             {
+                MaskSnorkelID=5,
                 Brand = "Fourth Element",
                 Model = "Scout Kontrast",
                 PricePrDay = 75,
@@ -48,7 +50,7 @@ namespace diveDeep.Persistence
             },
 
             new MaskSnorkel
-            {
+            {   MaskSnorkelID=6,
                 Brand = "Fourth Element",
                 Model = "Scout Enhance",
                 PricePrDay = 75,
@@ -57,6 +59,7 @@ namespace diveDeep.Persistence
 
             new MaskSnorkel
             {
+                MaskSnorkelID=7,
                 Brand = "Tusa",
                 Model = "Element",
                 PricePrDay = 75,

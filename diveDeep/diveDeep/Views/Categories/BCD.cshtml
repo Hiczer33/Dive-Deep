@@ -11,8 +11,9 @@ else
     <div class="row g-3">
         @foreach (var item in Model)
         {
+            
             <div class="col-12 col-sm-6 col-lg-4">
-                <a class="text-decoration-none" href="#">
+                <a class="text-decoration-none" asp-controller="Categoie" asp-action="">
                 <div class="card h-100">
                     <img src="@item.ImageUrl" alt="@item.Model" class="product-img" />
                     <div class="card-body">

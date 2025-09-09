@@ -1,5 +1,4 @@
 ﻿using diveDeep.Models;
-using System.ComponentModel.DataAnnotations;
 
 namespace diveDeep.Persistence
 {
@@ -10,6 +9,7 @@ namespace diveDeep.Persistence
         {
             new Regulatorset
             {
+                RegulatorsetID = 1,
                 Brand = "Scubapro",
                 FirstStep = "MK25EVO",
                 SecondStep = "S600",
@@ -19,7 +19,7 @@ namespace diveDeep.Persistence
             },
 
             new Regulatorset
-            {
+            {   RegulatorsetID=2,
                 Brand = "Scubapro",
                 FirstStep = "MK17EVO",
                 SecondStep = "C370",
@@ -31,6 +31,7 @@ namespace diveDeep.Persistence
 
             new Regulatorset
             {
+                RegulatorsetID = 3,
                 Brand = "Scubapro",
                 FirstStep = "MK25EVO BT",
                 SecondStep = "A700 Carbon BT",

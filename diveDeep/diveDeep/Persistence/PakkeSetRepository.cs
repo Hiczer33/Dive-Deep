@@ -10,6 +10,7 @@ namespace diveDeep.Persistence
 
             new PakkeSet
             {
+                PakkeSetID = 1,
                 Title = "Komplet Dykkersæt",
                 PricePrDay = 500,
                 SetInformation = "BCD, Dykkerdragt, Regulatorsæt, Tank, Finner, Maske, Snorkel",
@@ -18,6 +19,7 @@ namespace diveDeep.Persistence
 
            new PakkeSet
            {
+               PakkeSetID = 2,
                Title="Komplet Snorkelsæt",
                PricePrDay=400,
                SetInformation ="Maske/Snorkel,Finner",
