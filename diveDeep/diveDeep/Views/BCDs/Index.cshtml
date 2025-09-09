@@ -10,19 +10,22 @@
         <p class="card-text mb-1"><strong>Beskrivelse: </strong>@Model.Description </p>
 
         </div>
-        <div class="col-6"> 
-        <p class="card-text mb-1"><strong>Brand: </strong>@Model.Brand </p>
-        <p class="card-text mb-1"><strong>Model: </strong>@Model.Model </p>
+          <div class="col-6"> 
+         <p class="card-text mb-1"><strong>Brand: </strong>@Model.Brand </p>
+         <p class="card-text mb-1"><strong>Model: </strong>@Model.Model </p>
 
         <div class="mb-3">
             <label for="size" class="form-label"><strong>Størrelse: </strong></label>
             <select id="size" name="SelectedSize" class="form-select">
-                @foreach (var size in Model.Size)   // Model.Size er List<SizeType> fx S, M, L
+                @foreach (var size in Model.Size)
                 {
                     <option value="@size">@size</option>
                 }
             </select>
         </div>
         <p class="card-text mb-1"><strong>Pris/dag: </strong> @Model.PricePrDay kr </p>
+        <div class="container text-center my-3">
+            <a href="@Url.Action()" class="btn btn-primary">Tilføj til kurv</a>
+        </div>
         </div>
     </div>
