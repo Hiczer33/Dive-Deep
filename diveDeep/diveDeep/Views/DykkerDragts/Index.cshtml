@@ -1,0 +1,21 @@
+﻿<div class="row">
+    <div class="col-6 ps-4">
+        <img src="@Model.ImageUrl" class="rounded "alt="Mangler billede af BCDprodukt" class="product-img" style="max-width:500px; max-height:500px; width:auto; height:auto;" />
+        <p class="card-text mb-1"><strong>Beskrivelse: </strong>@Model.Description </p>
+
+    </div>
+    <div class="col-6">
+        <p class="card-text mb-1"><strong>Brand: </strong>@Model.Brand </p>
+        <p class="card-text mb-1"><strong>Model: </strong>@Model.Model </p>
+        <p class="card-text mb-1"><strong>Pris/dag: </strong> @Model.PricePrDay </p>
+        <label for="cars">Vægle sø:</label>
+        <select name="cars" id="cars">
+            
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+      
+        </select>
+    </div>
+</div>
