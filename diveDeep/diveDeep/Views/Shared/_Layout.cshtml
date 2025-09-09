@@ -9,7 +9,7 @@
 
     <title>Dive Deep</title>
     <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
-    <link href="~/CssStyles/Home.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/CssStyles/Home.css" asp-append-version="true" />
     
   
 
@@ -53,7 +53,7 @@
                             <a class="nav-link" asp-controller="Categories" asp-action="PakkeSet">Komplette Sæt</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">FAQ</a>
+                            <a class="nav-link" asp-controller="Faq" asp-action="Index">FAQ</a>
                         </li>
                     </ul>
                 </div>

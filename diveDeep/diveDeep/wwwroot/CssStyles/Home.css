@@ -54,4 +54,16 @@
     margin: auto;
     display: block;
 }
-
+.FaqSpg {
+    margin-top: .5rem;
+    font-size: 20px;
+    font-weight: normal;
+}
+.FaqSvar {
+    background: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    padding: .5rem 0;
+    margin: 0 0 .75rem 0;
+    font-weight: 600!important;
+    font-size: 20px;
+}
