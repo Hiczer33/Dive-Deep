@@ -101,4 +101,5 @@
     height: 200px; /* ens højde */
     object-fit: cover; /* beskærer billedet så det passer uden at forvrænge */
     border-radius: 8px; /* valgfrit, giver runde hjørner */
+    margin: 0 auto 10px auto;
 }
