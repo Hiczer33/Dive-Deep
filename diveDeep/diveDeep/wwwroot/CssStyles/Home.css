@@ -54,16 +54,10 @@
     margin: auto;
     display: block;
 }
-.FaqSpg {
-    margin-top: .5rem;
-    font-size: 20px;
-    font-weight: normal;
-}
-.FaqSvar {
-    background: #f8f9fa;
-    border-bottom: 1px solid #dee2e6;
-    padding: .5rem 0;
-    margin: 0 0 .75rem 0;
-    font-weight: 600!important;
-    font-size: 20px;
+.product-card {
+    border: 3px solid #333; /* tykkere og mørkere linje */
+    border-radius: 10px; /* rundede hjørner (kan fjernes) */
+    padding: 15px; /* luft indeni */
+    margin-bottom: 20px; /* afstand til næste element */
+    background-color: #fff; /* sikrer kontrast mod baggrunden */
 }
