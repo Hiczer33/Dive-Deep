@@ -13,43 +13,43 @@ namespace diveDeep.Controllers
         public IActionResult Finner()
         {
             var model = FinsRepository.GetAll();
-            return View();
+            return View(model);
         }
 
         public IActionResult MaskeSnorkel()
         {
             var model = MaskSnorkelRepository.GetAll();
-            return View();
+            return View(model);
         }
 
         public IActionResult Regulatorsæt()
         {
             var model = RegulatorsetRepository.GetAll();
-            return View();
+            return View(model);
         }
 
         public IActionResult Tank()
         {
             var model = TankRepository.GetAll();
-            return View();
+            return View(model);
         }
 
         public IActionResult Dykkerdragt()
         {
             var model = DykkerdragtRpeository.GetAll();
-            return View();
+            return View(model);
         }
 
         public IActionResult BCD()
         {
             var model = BCDRepository.GetAll();
-            return View();
+            return View(model);
         }
 
-        public IActionResult Pakke()
+        public IActionResult PakkeSet()
         {
-
-            return View();
+            var model = PakkeSetRepository.GetAll();
+            return View(model);
         }
     }
 }

@@ -1,24 +1,22 @@
-﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-<!DOCTYPE html>
-
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
 
-    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
-    <link href="~/CssStyles/Home.css" rel="stylesheet" />
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Dive Deep</title>
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/CssStyles/Home.css" asp-append-version="true" />
     
   
     
 
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <header class="header">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
@@ -52,10 +50,10 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="/categories/Pakke">Set</a>
+                            <a class="nav-link" asp-controller="Categories" asp-action="PakkeSet">Komplette Sæt</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">FAQ</a>
+                            <a class="nav-link" asp-controller="Faq" asp-action="Index">FAQ</a>
                         </li>
                     </ul>
                 </div>
@@ -65,13 +63,13 @@
 
     </header>
 
-    <main>
+    <main class="flex-fill">
 
         @RenderBody()
 
     </main>
 
-    <footer class="footer">
+    <footer class="mt-auto footer">
         <div class="contact-row">
             <div class="left">Adresse: Dykkervej 10, 5000 Odense C</div>
             <div class="right">Åbningstider:</div>

@@ -1,2 +1,39 @@
-﻿
-<h3>BCD Her</h3>
+﻿@model IEnumerable<diveDeep.Models.BCD>
+
+<h3>BCD</h3>
+
+@if (Model == null || !Model.Any())
+{
+    <p>Ingen BCD-produkter fundet.</p>
+}
+else
+{
+    <div class="row g-3">
+        @foreach (var item in Model)
+        {
+            
+            <div class="col-12 col-sm-6 col-lg-4">
+                <a class="text-decoration-none" asp-controller="BCDs" asp-action="Index" asp-route-id="@item.BCDId">
+                    <div class="card product-card h-100">
+                    <img src="@item.ImageUrl" alt="@item.Model" class="product-img" />
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Brand</h5>
+
+                        <div class="row">
+                        <div class="col-6">
+                        <p class="card-text mb-1"><strong>Model:</strong> @item.Model</p>
+                        </div>
+                        
+                        <div class="col-6">
+                        <p class="card-text mb-1"><strong>Størrelser:</strong> @string.Join(", ", item.Size)</p>
+                        <p class="card-text"><strong>Pris/dag:</strong> @item.PricePrDay.ToString("0") kr</p>
+
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            </div>
+        }
+    </div>
+}
