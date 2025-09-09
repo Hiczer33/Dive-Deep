@@ -1,12 +1,12 @@
 ﻿@model IEnumerable<diveDeep.Models.Tank>
 <h3>Tank Her</h3>
-<h3>Maske/Snorkel Her</h3>
 @if (Model == null || !Model.Any())
 {
     <p>Ingen dykkerdragter fundet.</p>
 }
 else
 {
+    <div class="container">
 
     <div class="row g-3">
         @foreach (var item in Model)
@@ -39,5 +39,6 @@ else
 
 
         }
+    </div>
     </div>
 }
