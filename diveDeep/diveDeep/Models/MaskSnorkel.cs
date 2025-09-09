@@ -1,9 +1,9 @@
 ﻿namespace diveDeep.Models
 {
-    public class Mask_Snorkel
+    public class MaskSnorkel
     {
         public string Brand { get; set; }
-        public string Model { get; set; }        
+        public string Model { get; set; }
         public double PricePrDay { get; set; }
 
     }

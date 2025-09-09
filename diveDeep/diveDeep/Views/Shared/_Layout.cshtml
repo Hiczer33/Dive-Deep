@@ -22,7 +22,7 @@
     <header class="header">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" asp-controller="Home" asp-action="Index">
                     <img src="~/Images/DeepDiveLogoWithoutText.png" alt="Dive Deep logo" height="50" width="50">
                     Dive Deep
                 </a>
@@ -42,12 +42,12 @@
                                 Udstyr
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="udstyrDropdown">
-                                <li><a class="dropdown-item" href="/categories/BCD">BCD</a></li>
-                                <li><a class="dropdown-item" href="/categories/Dykkerdragt">DykkerDragter</a></li>
-                                <li><a class="dropdown-item" href="/categories/Tank">Tanke</a></li>
-                                <li><a class="dropdown-item" href="/categories/Regulatorsæt">Regulatorsæt</a></li>
-                                <li><a class="dropdown-item" href="/categories/MaskeSnorkel">Maske/Snorkel</a></li>
-                                <li><a class="dropdown-item" href="/categories/Finner">Finner</a></li>
+                                <li><a class="dropdown-item" asp-controller="Categories" asp-action="BCD">BCD</a></li>
+                                <li><a class="dropdown-item" asp-controller="Categories" asp-action="Dykkerdragt">DykkerDragter</a></li>
+                                <li><a class="dropdown-item" asp-controller="Categories" asp-action="Tank">Tanke</a></li>
+                                <li><a class="dropdown-item" asp-controller="Categories" asp-action="Regulatorsæt">Regulatorsæt</a></li>
+                                <li><a class="dropdown-item" asp-controller="Categories" asp-action="MaskeSnorkel">Maske/Snorkel</a></li>
+                                <li><a class="dropdown-item" asp-controller="Categories" asp-action="Finner">Finner</a></li>
                             </ul>
                         </li>
 
