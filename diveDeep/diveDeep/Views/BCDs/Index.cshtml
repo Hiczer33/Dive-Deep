@@ -4,15 +4,15 @@
 
 
 
-    <div class="row">
-        <div class="col-6 ps-4">
+<div class="row">
+    <div class="col-6 ps-4">
         <img src="@Model.ImageUrl" class="rounded" alt="Mangler billede af BCDprodukt" class="product-img" style="max-width:500px; max-height:500px; width:auto; height:auto;" />
         <p class="card-text mb-1"><strong>Beskrivelse: </strong>@Model.Description </p>
 
-        </div>
-          <div class="col-6"> 
-         <p class="card-text mb-1"><strong>Brand: </strong>@Model.Brand </p>
-         <p class="card-text mb-1"><strong>Model: </strong>@Model.Model </p>
+    </div>
+    <div class="col-6">
+        <p class="card-text mb-1"><strong>Brand: </strong>@Model.Brand </p>
+        <p class="card-text mb-1"><strong>Model: </strong>@Model.Model </p>
 
         <div class="mb-3">
             <label for="size" class="form-label"><strong>Størrelse: </strong></label>
@@ -27,5 +27,5 @@
         <div class="container text-center my-3">
             <a href="@Url.Action()" class="btn btn-primary">Tilføj til kurv</a>
         </div>
-        </div>
     </div>
+</div>
