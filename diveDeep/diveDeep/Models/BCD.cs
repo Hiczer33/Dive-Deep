@@ -10,5 +10,6 @@ namespace diveDeep.Models
         public required List<SizeType> Size { get; set; }
         public required double PricePrDay { get; set; }
         public required string ImageUrl { get; set; }
+        public string Description { get; set; }
     }
 }
