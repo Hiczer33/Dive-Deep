@@ -106,5 +106,9 @@ namespace diveDeep.Persistence
                         }
                     };
         public static IEnumerable<Dykkerdragt> GetAll() => _dykkerdragt;
+        public static Dykkerdragt? GetById(int id)
+        {
+            return _dykkerdragt.FirstOrDefault(x => x.DykkerDragtID == id);
+        }
     }
 }
