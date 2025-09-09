@@ -1,11 +1,36 @@
 ﻿body {
 }
-.footer{
-    background-color: lightblue;
+
+.body {
+    grid-template-rows: auto 1fr auto auto auto;
 }
 
 .navbar{
-    background-color: lightcoral;
+    background-color: lightblue;
+}
+
+
+.banner {
+    display: grid; /* keep it a grid */
+    place-items: center; /* center both ways */
+    min-height: 100px;
+    grid-column: 1 / -1;
+}
+
+    .banner img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+
+.grid3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 450px;
+    gap: 50px;
+    padding: 30px;
+    text-align: center;
 }
 
 /* Drop-in i din site.css */
@@ -20,10 +45,12 @@
     }
 }
 .footer {
-    background-color: lightblue
+    display: grid;
+    background-color: lightblue;
     font-family: Arial, sans-serif;
     font-size: 14px;
     border-top: 1px solid #ddd;
+
 }
 
 .contact-row {

@@ -18,7 +18,7 @@ namespace diveDeep.Controllers
 
         public IActionResult MaskeSnorkel()
         {
-            var model = Mask_SnorkelRepository.GetAll();
+            var model = MaskSnorkelRepository.GetAll();
             return View();
         }
 
