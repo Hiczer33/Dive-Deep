@@ -35,7 +35,7 @@ namespace diveDeep.Persistence
             {   TankID=4,
                 Brand = "Scubapro",
                 Volume = 15,
-                PricePrDay = 170,
+                PricePrDay = 180,
                 ImageUrl ="\\Images\\Tanke\\Scubapro_15L.webp"
 
             },
