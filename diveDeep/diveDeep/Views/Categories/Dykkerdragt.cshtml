@@ -14,8 +14,8 @@ else
         {
             
             <div class="col-12 col-sm-6 col-lg-4">
-               <a class="text-decoration-none" href="#">
-                    <div class="card product-card h-100">
+               <a class="text-decoration-none" asp-controller="DykkerDragts" asp-action="Index" asp-route-id="@item.DykkerDragtId">
+                <div class="card h-100">
                     <img src="@item.ImageUrl" alt="@item.Model" class="product-img" />
 
                     <div class="card-body">
@@ -28,6 +28,7 @@ else
                             </div>
 
                             <div class="col-6">
+                                    <p class="card-text"><strong>Tykkelse:</strong> @item.Thickness mm</p>
                                 <p class="card-text mb-1"><strong>Størrelser:</strong> @string.Join(", ", item.Size)</p>
                                 <p class="card-text"><strong>Pris/dag:</strong> @item.PricePrDay.ToString("0") kr</p>
                             </div>
