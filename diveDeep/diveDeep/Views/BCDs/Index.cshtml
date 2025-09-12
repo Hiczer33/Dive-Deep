@@ -25,7 +25,10 @@
         </div>
         <p class="card-text mb-1"><strong>Pris/dag: </strong> @Model.PricePrDay kr </p>
         <div class="container text-center my-3">
-            <a href="@Url.Action()" class="btn btn-primary">Tilføj til kurv</a>
+            <form asp-controller="List" asp-action="Add" method="post">
+                <input type="hidden" name="id" value="@Model.BCDId" />
+                <button type="submit" class="btn btn-primary">Tilføj til liste</button>
+            </form>
         </div>
     </div>
 </div>

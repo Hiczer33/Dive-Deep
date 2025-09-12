@@ -1,0 +1,18 @@
+﻿@model IReadOnlyList<int>
+
+<h2>Min simple liste</h2>
+
+@if (!Model.Any())
+{
+    <p>Listen er tom.</p>
+}
+else
+{
+    <ul>
+        @foreach (var id in Model)
+        {
+            <li>Produkt ID: @id</li>
+        }
+    </ul>
+}
+
