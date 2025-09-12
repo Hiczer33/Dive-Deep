@@ -11,5 +11,9 @@ namespace diveDeep.Controllers
             var _bcdView = BCDRepository.GetById(id.HasValue ? id.Value : 0);
             return View(_bcdView);
         }
+        IActionResult Add()
+        {
+
+        }
     }
 }

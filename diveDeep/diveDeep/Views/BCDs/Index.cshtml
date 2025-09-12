@@ -25,7 +25,8 @@
         </div>
         <p class="card-text mb-1"><strong>Pris/dag: </strong> @Model.PricePrDay kr </p>
         <div class="container text-center my-3">
-            <a href="@Url.Action()" class="btn btn-primary">Tilføj til kurv</a>
+            <a asp-controller= asp-route-Id="@Model.BCDId" class="btn btn-primary">Tilføj til kurv</a>
         </div>
     </div>
 </div>
+
