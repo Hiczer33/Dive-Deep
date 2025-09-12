@@ -1,18 +1,78 @@
-﻿@model IReadOnlyList<int>
+﻿    @model IReadOnlyList<diveDeep.Models.ListEntry>
+    @using System.Linq
+    @using diveDeep.Persistence
 
-<h2>Min simple liste</h2>
+    <h2>Min liste</h2>
 
-@if (!Model.Any())
-{
+    @if (Model == null || !Model.Any())
+    {
     <p>Listen er tom.</p>
-}
-else
-{
-    <ul>
-        @foreach (var id in Model)
-        {
-            <li>Produkt ID: @id</li>
-        }
-    </ul>
-}
+    }
+    else
+    {
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Kategori</th>
+                    <th>ID</th>
+                    <th>Produkt</th>
+                    <th>Pris pr. dag</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var x in Model)
+                {
+                    var key = (x.Category ?? "").Trim().ToLowerInvariant();
+                    string navn = "Ukendt";
+                    double pris = 0;
 
+                    if (key is "bcd")
+                    {
+                        var p = BCDRepository.GetById(1);
+                        if (p != null) { navn = $"{p.Brand} {p.Model}"; pris = p.PricePrDay; }
+                    }
+                    else if (key is "dykkerdragt")
+                    {
+                        var p = DykkerdragtRpeository.GetById(x.ProductId);
+                        if (p != null) { navn = $"{p.Brand} {p.Model}"; pris = p.PricePrDay; }
+                    }
+                    else if (key is "finner" or "fins")
+                    {
+                        var p = FinsRepository.GetAll().FirstOrDefault(i => i.FinsID == x.ProductId);
+                        if (p != null) { navn = $"{p.Brand} {p.Model}"; pris = p.PricePrDay; }
+                    }
+                    else if (key is "maskesnorkel" or "masksnorkel")
+                    {
+                        var p = MaskSnorkelRepository.GetAll().FirstOrDefault(i => i.MaskSnorkelID == x.ProductId);
+                        if (p != null) { navn = $"{p.Brand} {p.Model}"; pris = p.PricePrDay; }
+                    }
+                    else if (key is "pakkeset" or "pakkesæt" or "pakkesaet" or "pakkesæt")
+                    {
+                        var p = PakkeSetRepository.GetAll().FirstOrDefault(i => i.PakkeSetID == x.ProductId);
+                        if (p != null) { navn = p.Title; pris = p.PricePrDay; }
+                    }
+                    else if (key is "regulatorsæt" or "regulatorsaet" or "regulatorset")
+                    {
+                        var p = RegulatorsetRepository.GetAll().FirstOrDefault(i => i.RegulatorsetID == x.ProductId);
+                        if (p != null) { navn = $"{p.Brand} {p.FirstStep}/{p.SecondStep}"; pris = p.PricePrDay; }
+                    }
+                    else if (key is "tank")
+                    {
+                        var p = TankRepository.GetAll().FirstOrDefault(i => i.TankID == x.ProductId);
+                        if (p != null) { navn = $"{p.Brand} {p.Volume}L"; pris = p.PricePrDay; }
+                    }
+
+                    <tr>
+                        <td>@x.Category</td>
+                        <td>@x.ProductId</td>
+                        <td>@navn</td>
+                        <td>@(pris == 0 ? "-" : pris.ToString("0") + " kr")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <form asp-action="Clear" method="post" class="mt-3">
+            <button class="btn btn-danger">Ryd listen</button>
+        </form>
+    }

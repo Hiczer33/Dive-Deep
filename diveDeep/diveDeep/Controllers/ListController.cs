@@ -5,16 +5,17 @@ namespace diveDeep.Controllers
 {
     public class ListController : Controller
     {
+        // Viser hele listen i Views/List/Index.cshtml
         public IActionResult Index()
         {
-            var ids = ProductListService.GetAll();
-            return View(ids);
+            var items = ProductListService.GetAll(); // returnerer List<ListEntry>
+            return View(items);
         }
 
         [HttpPost]
-        public IActionResult Add(int id)
+        public IActionResult Add(string category, int id)
         {
-            ProductListService.Add(id);
+            ProductListService.Add(category, id);
             return RedirectToAction("Index");
         }
 
@@ -26,3 +27,4 @@ namespace diveDeep.Controllers
         }
     }
 }
+

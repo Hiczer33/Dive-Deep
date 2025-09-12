@@ -1,15 +1,17 @@
 ﻿using System.Collections.Generic;
+using diveDeep.Models;
 
 namespace diveDeep.Services
 {
     public static class ProductListService
     {
-        private static readonly List<int> _ids = new();
+        private static readonly List<ListEntry> _items = new();
 
-        public static IReadOnlyList<int> GetAll() => _ids;
+        public static IReadOnlyList<ListEntry> GetAll() => _items;
 
-        public static void Add(int productId) => _ids.Add(productId);
+        public static void Add(string category, int productId)
+            => _items.Add(new ListEntry { Category = category, ProductId = productId });
 
-        public static void Clear() => _ids.Clear();
+        public static void Clear() => _items.Clear();
     }
 }
